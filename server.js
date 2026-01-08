@@ -7,14 +7,6 @@ let latestYesAnswers = {};
 app.post('/webhook', (req, res) => {
 const formData = req.body.data;
 const yesAnswers = {};
-1.
-2.
-3.
-4.
-1.
-2.
-3.
-2
 for (const question in formData) {
 if (formData[question][0].toLowerCase() === 'yes') {
 yesAnswers[question] = formData[question][0];
